@@ -1,0 +1,5 @@
+columns:
+    id:
+        label: Id
+        type: number
+        searchable: true

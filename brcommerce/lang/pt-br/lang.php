@@ -51,4 +51,11 @@
             ],
         ],
     ],
+    'fields' => [
+        'product' => [
+            'tab' => [
+                'info' => 'Informação',
+            ],
+        ],
+    ],
 ];

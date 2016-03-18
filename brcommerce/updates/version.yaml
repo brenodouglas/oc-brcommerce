@@ -1,2 +1,27 @@
 1.0.1:
-    - Initialize plugin.
+    - 'Create category of products.'
+    - create_category_migration.php
+1.0.2:
+    - 'Create manufacture of products'
+    - create_manufacture_migration.php
+1.0.3:
+    - 'Crate option of product'
+    - create_option_migration.php
+1.0.4:
+    - 'Create product'
+    - create_product_migration.php
+1.0.5:
+    - 'Create pivot of product and option'
+    - create_product_option_migration.php
+1.0.6:
+    - 'Create pivot of product and category'
+    - create_product_category_migration.php
+1.0.7:
+    - 'Create pack of products'
+    - create_pack_product_migration.php
+1.0.8:
+    - 'Create information metadata of institutional'
+    - create_information_migration.php
+1.0.9:
+    - 'Create pivot of pack and category'
+    - create_pack_category_migration.php

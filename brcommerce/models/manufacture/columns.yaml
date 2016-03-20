@@ -3,3 +3,9 @@ columns:
         label: Id
         type: number
         searchable: true
+    name:
+        label: Nome
+        searchable: true
+    is_enable:
+        label: Ativo
+        type: boolean

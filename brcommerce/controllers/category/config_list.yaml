@@ -1,0 +1,11 @@
+list: $/brenodouglasaraujosouza/brcommerce/models/category/columns.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Category
+title: Category
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'brenodouglasaraujosouza/brcommerce/category/update/:id'

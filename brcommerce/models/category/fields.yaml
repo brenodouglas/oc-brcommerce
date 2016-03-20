@@ -1,1 +1,48 @@
-fields: {  }
+fields:
+    name:
+        label: Nome
+        span: left
+        required: true
+    slug:
+        label: Slug
+        span: right
+        placeholder: url do produto
+        preset:
+            field: name
+            type: slug
+        required: true
+    is_publish:
+        label: Publicar
+        span: left
+        type: switch
+        comment: Se já deseja publicar essa categoria
+    is_menu:
+        label: Item de menu
+        span: right
+        type: switch
+        comment: Se deseja que categoria faça parte do menu
+    description:
+        label: Descrição de categoria
+        type: richeditor
+        size: huge
+        required: true
+
+secondaryTabs:
+    stretch: true
+    fields:
+        meta_title:
+            label: Titulo
+            tab: SEO
+            type: text
+            span: left
+        meta_keywords:
+            label: Palavras Chaves
+            tab: SEO
+            type: text
+            span: right
+            comment: separe as palavras por virgulas
+        meta_description:
+            label: Descrição
+            tab: SEO
+            type: richeditor
+            size: huge

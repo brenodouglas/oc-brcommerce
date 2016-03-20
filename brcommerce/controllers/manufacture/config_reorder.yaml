@@ -1,0 +1,4 @@
+title: Manufacture
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Manufacture
+toolbar:
+    buttons: reorder_toolbar

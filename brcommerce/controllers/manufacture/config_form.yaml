@@ -1,0 +1,10 @@
+name: Manufacture
+form: $/brenodouglasaraujosouza/brcommerce/models/manufacture/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Manufacture
+defaultRedirect: brenodouglasaraujosouza/brcommerce/manufacture
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/manufacture/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/manufacture
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/manufacture
+    redirectClose: brenodouglasaraujosouza/brcommerce/manufacture

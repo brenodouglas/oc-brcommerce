@@ -1,0 +1,10 @@
+name: Category
+form: $/brenodouglasaraujosouza/brcommerce/models/category/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Category
+defaultRedirect: brenodouglasaraujosouza/brcommerce/category
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/category/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/category
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/category
+    redirectClose: brenodouglasaraujosouza/brcommerce/category

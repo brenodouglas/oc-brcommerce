@@ -1,1 +1,41 @@
-fields: {  }
+fields:
+    name:
+        label: Nome
+        span: left
+        required: true
+    slug:
+        label: Slug
+        span: right
+        placeholder: url
+        preset:
+            field: name
+            type: slug
+        required: true
+    is_enable:
+        label: Ativo
+        span: left
+        type: switch
+        comment: fabricante ativo/inativo
+    description:
+        label: Descrição
+        type: richeditor
+        size: huge
+
+secondaryTabs:
+    fields:
+        meta_title:
+            label: Titulo
+            tab: SEO
+            type: text
+            span: left
+        meta_keywords:
+            label: Palavras Chaves
+            tab: SEO
+            type: text
+            span: right
+            comment: separe as palavras por virgula
+        meta_description:
+            label: Descrição
+            tab: SEO
+            type: richeditor
+            size: huge

@@ -5,78 +5,78 @@ plugin:
     icon: oc-icon-shopping-cart
     homepage: ''
 navigation:
-    main-menu-item:
+    catalog:
         label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.catalog'
-        url: /
+        url: brenodouglasaraujosouza/brcommerce/category
         icon: icon-tag
         sideMenu:
-            side-menu-item:
+            category:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.categories'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/category
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.categories
-            side-menu-item2:
+            product:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.products'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/product
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.products
-            side-menu-item3:
+            options:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.options'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/option
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.options
-            side-menu-item4:
+            manufacture:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.manufactures'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/manufacture
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.manufacture
-            side-menu-item5:
+            reviews:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.reviews'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/reviews
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.reviews
-            side-menu-item6:
+            information:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.information'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/information
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.information
-    main-menu-item2:
+    sales:
         label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.sales'
         url: /
         icon: icon-shopping-cart
         permissions:
             - 'br.commerce.sales.*'
         sideMenu:
-            side-menu-item:
+            order:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.orders'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/order
                 icon: icon-shopping-cart
-            side-menu-item2:
+            invoice:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.invoices'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/invoice
                 icon: icon-shopping-cart
-            side-menu-item3:
+            return:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.returns'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/return
                 icon: icon-shopping-cart
-    main-menu-item3:
+    customer:
         label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.customer'
-        url: /
+        url: brenodouglasaraujosouza/brcommerce/customer
         icon: icon-user
         sideMenu:
-            side-menu-item:
+            customer:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.customers'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/customer
                 icon: icon-user
-            side-menu-item2:
+            group:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.groups'
-                url: /
+                url: brenodouglasaraujosouza/brcommerce/group
                 icon: icon-user
     main-menu-item4:
         label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.marketing'

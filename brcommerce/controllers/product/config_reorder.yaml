@@ -1,0 +1,4 @@
+title: Product
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Product
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,10 @@
+name: Product
+form: $/brenodouglasaraujosouza/brcommerce/models/product/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Product
+defaultRedirect: brenodouglasaraujosouza/brcommerce/product
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/product/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/product
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/product
+    redirectClose: brenodouglasaraujosouza/brcommerce/product

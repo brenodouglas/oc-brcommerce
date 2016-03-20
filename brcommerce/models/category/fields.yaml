@@ -11,6 +11,10 @@ fields:
             field: name
             type: slug
         required: true
+    parent:
+        label: Categoria pai
+        type: relation
+
     is_publish:
         label: Publicar
         span: left

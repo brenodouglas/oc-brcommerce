@@ -22,12 +22,6 @@ navigation:
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.products
-            options:
-                label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.options'
-                url: brenodouglasaraujosouza/brcommerce/option
-                icon: icon-tags
-                permissions:
-                    - brcommerce.catalog.options
             manufacture:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.manufactures'
                 url: brenodouglasaraujosouza/brcommerce/manufacture

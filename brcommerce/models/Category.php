@@ -15,14 +15,22 @@ class Category extends Model
     public $rules = [
     ];
 
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
+    /**
+     * @var array Guarded fields
      */
-    public $timestamps = false;
+    protected $guarded = ['*'];
+
+    /**
+     * @var array Fillable fields
+     */
+    protected $fillable = [];
 
     /**
      * @var string The database table used by the model.
      */
     public $table = 'brenodouglasaraujosouza_brcommerce_category';
+
+    public $belongsTo = [
+        'parent' => [self::class]
+    ];
 }

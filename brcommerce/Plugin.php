@@ -8,6 +8,24 @@ class Plugin extends PluginBase
     {
     }
 
+    public function registerFormWidgets()
+    {
+        return [
+            'Owl\FormWidgets\Tagbox\Widget' => [
+                'label' => 'Tagbox',
+                'code'  => 'owl-tagbox'
+            ],
+            'Owl\FormWidgets\Money\Widget' => [
+                'label' => 'Money',
+                'code' => 'owl-money'
+            ],
+            'Owl\FormWidgets\HasMany\Widget' => [
+                'label' => 'Hasmany',
+                'code'  => 'owl-hasmany'
+            ]
+        ];
+    }
+
     public function registerSettings()
     {
     }

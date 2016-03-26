@@ -1,0 +1,15 @@
+{
+    "name": "brenodouglas/brcommerce",
+    "description": "Plugin ecommerce for octoberCMS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BrenoDouglas",
+            "email": "bdouglasans@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "owl/library": "dev-master"
+    }
+}

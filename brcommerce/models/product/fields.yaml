@@ -41,6 +41,16 @@ secondaryTabs:
             type: switch
             tab: Informações
             comment: Caso já deseja publicar esse produto
+        manufacture:
+            label: Fabricante
+            type: relation
+            tab: Informações
+            span: left
+        tags:
+            label: Tags
+            type: owl-tagbox
+            span: right
+            tab: Informações
         description:
             label: Descrição
             type: richeditor
@@ -48,13 +58,13 @@ secondaryTabs:
             tab: Informações
         price:
             label: Preço
-            type: number
+            type: owl-money
             span: left
             required: true
             tab: Venda
         old_price:
             label: Preço anterior
-            type: number
+            type: owl-money
             span: right
             tab: Venda
         quantity:
@@ -84,3 +94,14 @@ secondaryTabs:
             tab: SEO
             type: richeditor
             size: huge
+        options:
+            type: repeater
+            tab: Opções
+            form:
+                fields:
+                    name:
+                        label: Nome
+                        span: left
+                    value:
+                        label: Valor
+                        span: right

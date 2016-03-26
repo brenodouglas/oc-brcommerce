@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f28c9884b4d7015ac31b19950f3814f1",
+    "content-hash": "d0b8eb53fa924c6bbbcac268533e5a40",
+    "packages": [
+        {
+            "name": "owl/library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/october-widgets/library.git",
+                "reference": "bd82d03d46b11b935896fd9473a798c980bb90cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/october-widgets/library/zipball/bd82d03d46b11b935896fd9473a798c980bb90cb",
+                "reference": "bd82d03d46b11b935896fd9473a798c980bb90cb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Owl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Scott Bedard",
+                    "email": "scottbedard90@gmail.com"
+                }
+            ],
+            "description": "October Widget Library",
+            "homepage": "http://scottbedard.net",
+            "keywords": [
+                "laravel",
+                "octobercms"
+            ],
+            "time": "2015-07-09 20:44:46"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "owl/library": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

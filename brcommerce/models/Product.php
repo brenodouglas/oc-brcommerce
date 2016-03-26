@@ -29,12 +29,16 @@ class Product extends Model
      * Disable timestamps by default.
      * Remove this line if timestamps are defined in the database table.
      */
-    public $timestamps = false;
+    public $timestamps = true;
 
     /**
      * @var string The database table used by the model.
      */
     public $table = 'brenodouglasaraujosouza_brcommerce_product';
+
+    public $belongsTo = [
+        'manufacture' => [Manufacture::class]
+    ];
 
     public $belongsToMany = [
         'categories' => [

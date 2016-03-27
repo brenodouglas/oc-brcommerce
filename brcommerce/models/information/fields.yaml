@@ -1,1 +1,53 @@
-fields: {  }
+fields:
+
+secondaryTabs:
+    stretch: true
+    fields:
+        name:
+            label: Titulo
+            span: left
+            required: true
+            tab: Informações
+        slug:
+            label: Slug
+            span: right
+            placeholder: url da informação
+            preset:
+                field: name
+                type: slug
+            required: true
+            tab: Informações
+        in_bottom:
+            label: Radapé
+            span: left
+            type: switch
+            comment: Deseja adicionar item ao rodapé
+            tab: Informações
+        is_publish:
+            label: Publicar
+            span: right
+            type: switch
+            comment: deseja publicar
+            tab: Informações
+        description:
+            label: Conteúdo da pagina
+            type: richeditor
+            size: huge
+            required: true
+            tab: Informações
+        meta_title:
+            label: Titulo
+            tab: SEO
+            type: text
+            span: left
+        meta_keywords:
+            label: Palavras Chaves
+            tab: SEO
+            type: text
+            span: right
+            comment: separe as palavras por virgulas
+        meta_description:
+            label: Descrição
+            tab: SEO
+            type: richeditor
+            size: huge

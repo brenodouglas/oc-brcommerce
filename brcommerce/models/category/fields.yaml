@@ -1,39 +1,51 @@
 fields:
-    name:
-        label: Nome
-        span: left
-        required: true
-    slug:
-        label: Slug
-        span: right
-        placeholder: url do produto
-        preset:
-            field: name
-            type: slug
-        required: true
-    parent:
-        label: Categoria pai
-        type: relation
-
-    is_publish:
-        label: Publicar
-        span: left
-        type: switch
-        comment: Se já deseja publicar essa categoria
-    is_menu:
-        label: Item de menu
-        span: right
-        type: switch
-        comment: Se deseja que categoria faça parte do menu
-    description:
-        label: Descrição de categoria
-        type: richeditor
-        size: huge
-        required: true
 
 secondaryTabs:
     stretch: true
     fields:
+        name:
+            label: Nome
+            span: left
+            required: true
+            tab: Informações
+        slug:
+            label: Slug
+            span: right
+            placeholder: url
+            preset:
+                field: name
+                type: slug
+            required: true
+            tab: Informações
+        parent:
+            label: Categoria pai
+            type: relation
+            tab: Informações
+        is_publish:
+            label: Publicar
+            span: left
+            type: switch
+            comment: Se já deseja publicar essa categoria
+            tab: Informações
+        is_menu:
+            label: Item de menu
+            span: right
+            type: switch
+            comment: Se deseja que categoria faça parte do menu
+            tab: Informações
+        description:
+            label: Descrição de categoria
+            type: richeditor
+            size: huge
+            required: true
+            tab: Informações
+        options:
+           type: repeater
+           tab: Opções
+           form:
+               fields:
+                   name:
+                       label: Nome
         meta_title:
             label: Titulo
             tab: SEO

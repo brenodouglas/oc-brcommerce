@@ -96,6 +96,7 @@ secondaryTabs:
             size: huge
         options:
             type: repeater
+            dependsOn: categories
             tab: Opções
             form:
                 fields:

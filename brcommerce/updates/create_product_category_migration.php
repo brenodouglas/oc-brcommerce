@@ -20,7 +20,6 @@ class CreateProductCategoryMigration extends Migration
 
             $table->index('product_id', 'product_category_product_index');
             $table->index('category_id', 'product_category_category_index');
-            $table->timestamps();
         });
     }
 

@@ -16,6 +16,11 @@ class Category extends Model
     ];
 
     /**
+     * @var array List of attribute names which are json encoded and decoded from the database.
+     */
+    protected $jsonable = ['options'];
+
+    /**
      * @var array Guarded fields
      */
     protected $guarded = ['*'];

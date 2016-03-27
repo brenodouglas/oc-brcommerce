@@ -1,0 +1,10 @@
+name: Information
+form: $/brenodouglasaraujosouza/brcommerce/models/information/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Information
+defaultRedirect: brenodouglasaraujosouza/brcommerce/information
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/information/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/information
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/information
+    redirectClose: brenodouglasaraujosouza/brcommerce/information

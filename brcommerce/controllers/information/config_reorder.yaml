@@ -1,0 +1,4 @@
+title: Information
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Information
+toolbar:
+    buttons: reorder_toolbar

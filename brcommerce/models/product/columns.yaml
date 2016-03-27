@@ -3,3 +3,7 @@ columns:
         label: Id
         type: number
         searchable: true
+    name:
+        label: Nome
+        type: text
+        searchable: true

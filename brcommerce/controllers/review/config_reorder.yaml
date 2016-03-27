@@ -1,0 +1,4 @@
+title: Review
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Review
+toolbar:
+    buttons: reorder_toolbar

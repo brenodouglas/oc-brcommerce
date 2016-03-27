@@ -34,7 +34,6 @@ class CreateProductMigration extends Migration
             $table->integer('quantity');
 
             $table->string('inventory_ref');
-            $table->integer('invetory_type');
 
             $table->foreign('manufacture_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_manufacture');
             $table->index('manufacture_id', 'product_manufacture_index');

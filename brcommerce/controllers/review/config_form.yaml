@@ -1,0 +1,10 @@
+name: Review
+form: $/brenodouglasaraujosouza/brcommerce/models/review/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Review
+defaultRedirect: brenodouglasaraujosouza/brcommerce/review
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/review/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/review
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/review
+    redirectClose: brenodouglasaraujosouza/brcommerce/review

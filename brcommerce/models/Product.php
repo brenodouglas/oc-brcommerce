@@ -18,18 +18,12 @@ class Product extends Model
     /**
      * @var array List of attribute names which are json encoded and decoded from the database.
      */
-    protected $jsonable = ['options'];
+    protected $jsonable = ['options', 'tags'];
 
     /**
      * @var array List of datetime attributes to convert to an instance of Carbon/DateTime objects.
      */
     protected $dates = ['publish_date'];
-
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
-    public $timestamps = true;
 
     /**
      * @var string The database table used by the model.

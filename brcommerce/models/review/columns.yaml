@@ -1,0 +1,10 @@
+columns:
+    id:
+        label: Id
+        searchable: true
+    title:
+        label: Titulo
+        searchable: true
+    author:
+        label: Autor
+        searchable: true

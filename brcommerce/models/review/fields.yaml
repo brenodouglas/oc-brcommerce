@@ -1,0 +1,17 @@
+fields:
+    title:
+        label: Titulo
+        span: left
+    author:
+        label: Autor
+        span: right
+    product:
+        label: Produto
+        list: $/brenodouglasaraujosouza/brcommerce/models/product/columns.yaml
+        prompt: Clique em %s para buscar um produto
+        type: recordfinder
+        nameFrom: name
+    description:
+        label: Descrição
+        type: richeditor
+        size: huge

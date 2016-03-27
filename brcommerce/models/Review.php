@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Information extends Model
+class Review extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
@@ -15,8 +15,12 @@ class Information extends Model
     public $rules = [
     ];
 
+    public $belongsTo = [
+        'product' => [Product::class]
+    ];
+
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'brenodouglasaraujosouza_brcommerce_information';
+    public $table = 'brenodouglasaraujosouza_brcommerce_review';
 }

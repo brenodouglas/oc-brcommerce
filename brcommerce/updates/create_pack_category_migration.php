@@ -20,7 +20,6 @@ class CreatePackCategoryMigration extends Migration
 
             $table->index('pack_id', 'pack_category_pack_index');
             $table->index('category_id', 'pack_category_category_index');
-            $table->timestamps();
         });
     }
 

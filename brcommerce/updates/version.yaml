@@ -31,3 +31,6 @@
 1.0.11:
     - 'Create customer'
     - create_customer_migration.php
+1.0.12:
+    - 'Create review table'
+    - create_review_migration.php

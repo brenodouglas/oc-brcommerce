@@ -30,7 +30,7 @@ navigation:
                     - brcommerce.catalog.manufacture
             reviews:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.reviews'
-                url: brenodouglasaraujosouza/brcommerce/reviews
+                url: brenodouglasaraujosouza/brcommerce/review
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.reviews

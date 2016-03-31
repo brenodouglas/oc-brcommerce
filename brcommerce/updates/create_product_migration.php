@@ -35,7 +35,7 @@ class CreateProductMigration extends Migration
 
             $table->string('inventory_ref');
 
-            $table->foreign('manufacture_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_manufacture');
+            $table->foreign('manufacture_id', 'manufacture_product_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_manufacture');
             $table->index('manufacture_id', 'product_manufacture_index');
 
             $table->timestamps();

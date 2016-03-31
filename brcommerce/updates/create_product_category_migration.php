@@ -15,8 +15,8 @@ class CreateProductCategoryMigration extends Migration
             $table->integer('product_id')->nullable()->unsigned();
             $table->integer('category_id')->nullable()->unsigned();
 
-            $table->foreign('product_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_product');
-            $table->foreign('category_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
+            $table->foreign('product_id', 'product_cateogry_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_product');
+            $table->foreign('category_id', 'category_product_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
 
             $table->index('product_id', 'product_category_product_index');
             $table->index('category_id', 'product_category_category_index');

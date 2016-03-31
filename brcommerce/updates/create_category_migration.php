@@ -26,7 +26,7 @@ class CreateCategoryMigration extends Migration
             $table->integer('columns')->default(1);
             $table->json('options')->nullable();
 
-            $table->foreign('parent_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
+            $table->foreign('parent_id', 'parent_category_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
             $table->index('parent_id', 'category_parent_index');
 
             $table->timestamps();

@@ -23,7 +23,7 @@ class CreateCustomerMigration extends Migration
             $table->integer('email_active');
 
             $table->integer('group_id')->unsigned();
-            $table->foreign('group_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_customer_group');
+            $table->foreign('group_id', 'group_costumer_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_customer_group');
             $table->index('group_id', 'custome_customer_group_index');
 
             $table->timestamps();

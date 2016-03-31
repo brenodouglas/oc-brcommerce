@@ -15,8 +15,8 @@ class CreatePackCategoryMigration extends Migration
             $table->integer('pack_id')->nullable()->unsigned();
             $table->integer('category_id')->nullable()->unsigned();
 
-            $table->foreign('pack_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_pack');
-            $table->foreign('category_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
+            $table->foreign('pack_id', 'pack_category_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_pack');
+            $table->foreign('category_id', 'category_pack_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
 
             $table->index('pack_id', 'pack_category_pack_index');
             $table->index('category_id', 'pack_category_category_index');

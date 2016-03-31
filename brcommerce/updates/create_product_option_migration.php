@@ -20,9 +20,9 @@ class CreateProductOptionMigration extends Migration
             $table->integer('category_id')->nullable()->unsigned();
             $table->integer('option_id')->nullable()->unsigned();
 
-            $table->foreign('product_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_product');
-            $table->foreign('category_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
-            $table->foreign('option_id')->references('id')->on('brenodouglasaraujosouza_brcommerce_option');
+            $table->foreign('product_id', 'product_option_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_product');
+            $table->foreign('category_id', 'category_option_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_category');
+            $table->foreign('option_id', 'option_option_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_option');
 
             $table->index('product_id', 'option_product_index');
             $table->index('category_id', 'option_category_index');

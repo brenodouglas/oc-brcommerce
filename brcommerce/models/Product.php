@@ -1,6 +1,7 @@
 <?php namespace BrenoDouglasAraujoSouza\BrCommerce\Models;
 
 use Model;
+use System\Models\File;
 
 /**
  * Model
@@ -34,6 +35,11 @@ class Product extends Model
         'manufacture' => [Manufacture::class]
     ];
 
+    public $attachMany = [
+        'images' => [
+            File::class
+        ],
+    ];
     public $belongsToMany = [
         'categories' => [
             Category::class,

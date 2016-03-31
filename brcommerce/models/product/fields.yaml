@@ -94,6 +94,11 @@ secondaryTabs:
             tab: SEO
             type: richeditor
             size: huge
+        images:
+            label: Imagens
+            tab: Fotos
+            type: fileupload
+            mode: image
         options:
             type: repeater
             dependsOn: categories

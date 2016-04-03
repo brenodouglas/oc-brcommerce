@@ -100,9 +100,10 @@ secondaryTabs:
             type: fileupload
             mode: image
         options:
-            type: repeater
+            type: BrenoDouglasAraujoSouza\BrCommerce\Widget\RepeaterCommerce
             dependsOn: categories
             tab: Opções
+            dependsOn: categories
             form:
                 fields:
                     name:

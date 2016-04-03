@@ -46,4 +46,32 @@ class Product extends Model
             'table' => 'brenodouglasaraujosouza_brcommerce_product_has_category'
         ],
     ];
+
+    public function filterFields($fields, $context = null)
+    {
+        if(isset($fields->categories)) {
+            $categories = $fields->categories->value;
+
+            if (count($categories) == 0 || $categories == 0)
+                return;
+
+            $options = $this->options;
+
+            foreach ($categories as $category) {
+                foreach ($this->categories as $categoryEntity) {
+                    if ($categoryEntity->id == $category)
+                        $options = array_merge($options, $categoryEntity->options);
+                }
+            }
+
+            foreach ($options as &$option) {
+                $option['value'] = '';
+            }
+
+            $this->options = $options;
+            $fields->options->value = $options;
+        }
+
+        return $fields;
+    }
 }

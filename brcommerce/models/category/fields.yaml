@@ -21,6 +21,7 @@ secondaryTabs:
             label: Categoria pai
             type: relation
             tab: Informações
+            emptyOption: Nenhuma
         is_publish:
             label: Publicar
             span: left

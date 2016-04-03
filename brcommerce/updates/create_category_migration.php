@@ -13,6 +13,7 @@ class CreateCategoryMigration extends Migration
             $table->increments("id");
             $table->string("name");
             $table->string('slug');
+            $table->string('icon')->nullable();
 
             $table->string('meta_title');
             $table->text('meta_description');

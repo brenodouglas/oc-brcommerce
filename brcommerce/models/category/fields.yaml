@@ -17,10 +17,17 @@ secondaryTabs:
                 type: slug
             required: true
             tab: Informações
+        icon:
+            label: Icone
+            type: dropdown
+            emptyOption: Nenhum
+            tab: Informações
+            span: left
         parent:
             label: Categoria pai
             type: relation
             tab: Informações
+            span: right
             emptyOption: Nenhuma
         is_publish:
             label: Publicar

@@ -9,6 +9,15 @@ class Category extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
+    const ICONS = [
+        '' => 'Nenhum',
+        'i-vinhos' => 'Vinhos',
+        'i-cerveja' => 'Cerveja',
+        'i-destilados' => 'Destilados',
+        'i-espumantes' => 'Espumantes',
+        'i-acessorios' => 'Acessórios'
+    ];
+
     /*
      * Validation
      */
@@ -38,4 +47,9 @@ class Category extends Model
     public $belongsTo = [
         'parent' => [self::class]
     ];
+
+    public function getIconOptions()
+    {
+        return self::ICONS;
+    }
 }

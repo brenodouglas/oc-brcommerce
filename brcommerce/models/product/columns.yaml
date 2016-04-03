@@ -1,9 +1,13 @@
 columns:
-    id:
-        label: Id
-        type: number
+    sku:
+        label: Referencia
+        type: text
         searchable: true
     name:
         label: Nome
+        type: text
+        searchable: true
+    categoryName:
+        label: Categoria
         type: text
         searchable: true

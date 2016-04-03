@@ -40,12 +40,23 @@ class Product extends Model
             File::class
         ],
     ];
+
     public $belongsToMany = [
         'categories' => [
             Category::class,
             'table' => 'brenodouglasaraujosouza_brcommerce_product_has_category'
         ],
     ];
+
+    public function getCategoryNameAttribute()
+    {
+        $categories = [];
+        foreach ($this->categories as $category) {
+            $categories[] = $category->name;
+        }
+
+        return implode(", ", $categories);
+    }
 
     public function filterFields($fields, $context = null)
     {

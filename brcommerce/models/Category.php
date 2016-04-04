@@ -1,6 +1,7 @@
 <?php namespace BrenoDouglasAraujoSouza\BrCommerce\Models;
 
 use Model;
+use October\Rain\Database\QueryBuilder;
 
 /**
  * Model
@@ -9,7 +10,7 @@ class Category extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
-    const ICONS = [
+    static $icons = [
         '' => 'Nenhum',
         'i-vinhos' => 'Vinhos',
         'i-cerveja' => 'Cerveja',
@@ -50,6 +51,7 @@ class Category extends Model
 
     public function getIconOptions()
     {
-        return self::ICONS;
+        return self::$icons;
     }
+
 }

@@ -29,4 +29,25 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    public function register()
+    {
+        set_exception_handler([$this, 'handleException']);
+    }
+
+    public function handleException($e)
+    {
+        if (! $e instanceof Exception) {
+            $e = new \Symfony\Component\Debug\Exception\FatalThrowableError($e);
+        }
+
+        $handler = $this->app->make('Illuminate\Contracts\Debug\ExceptionHandler');
+        $handler->report($e);
+
+        if ($this->app->runningInConsole()) {
+            $handler->renderForConsole(new ConsoleOutput, $e);
+        } else {
+            $handler->render($this->app['request'], $e)->send();
+        }
+    }
 }

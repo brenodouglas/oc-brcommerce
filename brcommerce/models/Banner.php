@@ -1,6 +1,7 @@
 <?php namespace Brenodouglasaraujosouza\Brcommerce\Models;
 
 use Model;
+use System\Models\File;
 
 /**
  * Banner Model
@@ -12,6 +13,8 @@ class Banner extends Model
      * @var string The database table used by the model.
      */
     public $table = 'brenodouglasaraujosouza_brcommerce_banners';
+
+    public $dates = ['expiration_date', 'initial_date'];
 
     /**
      * @var array Guarded fields
@@ -33,7 +36,9 @@ class Banner extends Model
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [];
+    public $attachOne = [
+        'image' => [File::class]
+    ];
     public $attachMany = [];
 
 }

@@ -34,3 +34,6 @@
 1.0.12:
     - 'Create review table'
     - create_review_migration.php
+1.0.13:
+    - 'Create banner table'
+    - create_banners_table.php

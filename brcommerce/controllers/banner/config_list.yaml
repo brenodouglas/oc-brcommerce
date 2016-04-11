@@ -1,0 +1,11 @@
+title: Banner
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Banner
+list: $/brenodouglasaraujosouza/brcommerce/models/banner/columns.yaml
+recordUrl: 'brenodouglasaraujosouza/brcommerce/banner/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

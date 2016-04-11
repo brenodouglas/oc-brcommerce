@@ -1,0 +1,4 @@
+title: Banner
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Banner
+toolbar:
+    buttons: reorder_toolbar

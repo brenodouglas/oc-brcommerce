@@ -3,6 +3,37 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    title:
+        label: Titulo
+        type: text
+    link:
+        label: Link
+        type: text
+        span: left
+    target:
+        label: Target
+        type: dropdown
+        span: right
+        options:
+            _blank: Nova aba
+            _self: Mesma janela
+    initial_date:
+        label: Data de publicação
+        type: datepicker
+        mode: date
+        span: left
+    expiration_date:
+        label: Data de expiração
+        type: datepicker
+        mode: date
+        span: right
+    image:
+        label: Imagem
+        type: fileupload
+        mode: image
+        imageHeight: 561
+        imageWidth: 169
+    description:
+        label: Descrição
+        type: richeditor
+        size: huge

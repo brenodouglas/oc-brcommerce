@@ -1,0 +1,10 @@
+name: Banner
+form: $/brenodouglasaraujosouza/brcommerce/models/banner/fields.yaml
+modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Banner
+defaultRedirect: brenodouglasaraujosouza/brcommerce/banner
+create:
+    redirect: 'brenodouglasaraujosouza/brcommerce/banner/update/:id'
+    redirectClose: brenodouglasaraujosouza/brcommerce/banner
+update:
+    redirect: brenodouglasaraujosouza/brcommerce/banner
+    redirectClose: brenodouglasaraujosouza/brcommerce/banner

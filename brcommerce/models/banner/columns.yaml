@@ -6,3 +6,11 @@ columns:
     id:
         label: ID
         searchable: true
+    title:
+        label: Titulo
+        searchable: true
+        type: text
+    expiration_date:
+        label: Data de expiração
+        type: datetime
+        format: d-m-Y

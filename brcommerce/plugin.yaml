@@ -40,6 +40,10 @@ navigation:
                 icon: icon-tags
                 permissions:
                     - brcommerce.catalog.information
+            banner:
+                label: Banner
+                url: brenodouglasaraujosouza/brcommerce/banner
+                icon: icon-tags
     sales:
         label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.sales'
         url: /

@@ -54,6 +54,11 @@ secondaryTabs:
                fields:
                    name:
                        label: Nome
+                       span: left
+                   filter:
+                       label: Filtro
+                       span: right
+                       type: switch
         meta_title:
             label: Titulo
             tab: SEO

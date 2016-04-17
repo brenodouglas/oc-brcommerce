@@ -70,13 +70,27 @@ class Product extends Model
 
             foreach ($categories as $category) {
                 foreach ($this->categories as $categoryEntity) {
-                    if ($categoryEntity->id == $category)
-                        $options = array_merge($options, $categoryEntity->options);
+                    if ($categoryEntity->id == $category){
+
+                        $optionsMerged = array_filter($categoryEntity->options, function($option) use($options) {
+                            $count = 0;
+
+                            foreach($options as $opt) {
+                                if($option['name'] != $opt['name'])
+                                    $count++;
+                            }
+
+                            return $count > 0 ? false : true;
+                        });
+
+                        $options = array_merge($options, $optionsMerged);
+                    }
                 }
             }
 
             foreach ($options as &$option) {
-                $option['value'] = '';
+                if(!isset($option['value']))
+                    $option['value'] = '';
             }
 
             $this->options = $options;

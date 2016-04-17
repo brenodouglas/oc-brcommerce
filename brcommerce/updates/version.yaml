@@ -37,3 +37,6 @@
 1.0.13:
     - 'Create banner table'
     - create_banners_table.php
+1.0.14:
+    - 'Create view for options filter category'
+    - create_view_options_filter.php

@@ -112,3 +112,7 @@ secondaryTabs:
                     value:
                         label: Valor
                         span: right
+                    filter:
+                        label: Filtro
+                        span: left
+                        type: switch

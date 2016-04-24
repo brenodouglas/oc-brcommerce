@@ -48,17 +48,35 @@ secondaryTabs:
             required: true
             tab: Informações
         options:
-           type: repeater
-           tab: Opções
-           form:
-               fields:
-                   name:
-                       label: Nome
-                       span: left
-                   filter:
-                       label: Filtro
-                       span: right
-                       type: switch
+            type: repeater
+            tab: Opções
+            form:
+                fields:
+                    name:
+                        label: Nome
+                        span: left
+                    label:  
+                        label: Label 
+                        span: right
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
+                    filter:
+                        label: Filtro
+                        type: switch
+                        span: left
+                    type: 
+                        label: Tipo de filtro
+                        type: dropdown
+                        span: right
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
+                        options:
+                            0: Lista
+                            1: Campo
         meta_title:
             label: Titulo
             tab: SEO

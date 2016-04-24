@@ -41,6 +41,14 @@ secondaryTabs:
             type: switch
             tab: Informações
             comment: Caso já deseja publicar esse produto
+        author:
+            label: Autor
+            tab: Review
+        review:
+            label: Review
+            type: richeditor
+            size: huge
+            tab: Review
         manufacture:
             label: Fabricante
             type: relation
@@ -112,7 +120,25 @@ secondaryTabs:
                     value:
                         label: Valor
                         span: right
+                    type: 
+                        label: Tipo de filtro
+                        type: dropdown
+                        span: left
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
+                        options:
+                            0: Lista
+                            1: Campo
+                    label:  
+                        label: Label 
+                        span: right
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
                     filter:
                         label: Filtro
-                        span: left
                         type: switch
+                        span: left

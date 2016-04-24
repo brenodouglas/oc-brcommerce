@@ -28,4 +28,23 @@ class Filters extends Model
             Category::class
         ],
     ];
+
+    public function scopeFilteredCategoryList($query, $categoryId)
+    {
+        $filters = $query->where('category_id', $categoryId)
+                         ->where('type', 0)
+                                ->get();
+
+        $filterGuard = [];
+
+        foreach($filters as $filter) {
+            if(! isset($this['filters'][$filter->label])) {
+                $filterGuard[$filter->label] = [];
+            }
+
+            $filterGuard[$filter->label][] = $filter;
+        }
+
+        return $filterGuard;
+    }
 }

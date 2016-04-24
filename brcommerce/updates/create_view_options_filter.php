@@ -20,11 +20,13 @@ class CreateViewOptionsFilter extends Migration
             SELECT
                 lower(o.options->>'name') as name,
                 lower(o.options->>'value') as value,
+                o.options->>'label' as label,
+                o.options->>'type' as type,
                 count(o.id) as total,
                 o.category as category_id
             FROM options as o
             WHERE o.options->>'filter' = '1'
-            GROUP BY lower(o.options->>'name'), lower(o.options->>'value'), o.category"
+            GROUP BY lower(o.options->>'name'), lower(o.options->>'value'), o.category, o.options->>'label', o.options->>'type' "
         );
     }
 

@@ -16,6 +16,8 @@ class CreateProductMigration extends Migration
             $table->string('slug');
             $table->string('sku');
             $table->text('description');
+            $table->text('review');
+            $table->string('author');
 
             $table->string('meta_title');
             $table->text('meta_description');

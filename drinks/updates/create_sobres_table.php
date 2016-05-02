@@ -8,7 +8,7 @@ class CreateSobresTable extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_drinks_sobres', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_drinks_sobres', function($table) {
             $table->increments('id');
             $table->text('sobre');
             $table->json('faq')->nullable();

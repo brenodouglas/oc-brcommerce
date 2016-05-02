@@ -1,0 +1,15 @@
+1.0.1:
+    - Create custom category
+    - create_custom_categories_table.php
+1.0.2:
+    - Create custom products
+    - create_custom_products_table.php
+1.0.3:
+    - Create relation custom_category has products
+    - create_custom_category_has_products_table.php
+1.0.4:
+    - Create relation custom_produts has products
+    - create_custom_products_has_products_table.php
+1.0.5:
+    - Create sobre table
+    - create_sobres_table.php

@@ -12,19 +12,19 @@ class Cart
 		$product->quantity = $quantity;
 
 		if(! Session::has(self::PRODUCT_KEY) ) {
-			$productSerialize = serialize($productArray);
+			$productSerialize = serialize($product->toArray());
 			Session::put(self::PRODUCT_KEY, [$productSerialize]);
 		} else {
 
 			$products = $this->get();
 			$hasProduct = false;
 
-			foreach ($product as $key => $productItem) 
+			foreach ($products as $key => $productItem) 
 			{
 				if($product->id == $productItem->id) {
 
 					$product->quantity += $productItem->quantity;
-					$products[$key] = serialize($product);
+					$products[$key] = serialize($product->toArray());
 					$hasProduct = true;
 
 				} else {
@@ -33,7 +33,7 @@ class Cart
 			}
 
 			if (! $hasProduct)
-				$products[] = serialize($product);
+				$products[] = serialize($product->toArray());
 
 			Session::put(self::PRODUCT_KEY, $products);
 		}

@@ -1,0 +1,69 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+secondaryTabs:
+    stretch: true
+    fields:
+        name:
+            label: Nome
+            span: left
+            required: true
+            tab: Informações
+        slug:
+            label: Slug
+            span: right
+            placeholder: url
+            preset:
+                field: name
+                type: slug
+            required: true
+            tab: Informações
+        parent:
+            label: Categoria pai
+            type: relation
+            tab: Informações
+            span: left
+            emptyOption: Nenhuma
+        is_menu:
+            label: Item de menu
+            span: right
+            type: switch
+            comment: Se deseja que categoria faça parte do menu
+            tab: Informações
+        image:
+            label: Imagem
+            type: fileupload
+            mode: image
+            span: left
+            tab: Informações
+        type:
+            label: Tipo 
+            span: right
+            type: dropdown
+            tab: Informações
+            options:    
+                0: Subcategorias
+                1: Listagem de produtos
+        description:
+            label: Descrição de categoria
+            type: richeditor
+            size: huge
+            required: true
+            tab: Informações
+        meta_title:
+            label: Titulo
+            tab: SEO
+            type: text
+            span: left
+        meta_keywords:
+            label: Palavras Chaves
+            tab: SEO
+            type: text
+            span: right
+            comment: separe as palavras por virgulas
+        meta_description:
+            label: Descrição
+            tab: SEO
+            type: richeditor
+            size: huge

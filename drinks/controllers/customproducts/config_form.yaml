@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Custom Product
+
+# Model Form Field configuration
+form: $/brenodouglasaraujosouza/drinks/models/customproducts/fields.yaml
+
+# Model Class name
+modelClass: Brenodouglasaraujosouza\Drinks\Models\CustomProducts
+
+# Default redirect location
+defaultRedirect: brenodouglasaraujosouza/drinks/customproducts
+
+# Create page
+create:
+    title: Create Custom Product
+    redirect: brenodouglasaraujosouza/drinks/customproducts/update/:id
+    redirectClose: brenodouglasaraujosouza/drinks/customproducts
+
+# Update page
+update:
+    title: Edit Custom Product
+    redirect: brenodouglasaraujosouza/drinks/customproducts
+    redirectClose: brenodouglasaraujosouza/drinks/customproducts
+
+# Preview page
+preview:
+    title: Preview Custom Product

@@ -1,0 +1,14 @@
+products:
+    label: Produto
+    defaultSort: id
+    showSearch: true
+    emptyMessage: Nenhum produto de destaque    
+    showSorting: false
+    view:
+        list: $/brenodouglasaraujosouza/brcommerce/models/product/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        showSearch: true
+        form: $/brenodouglasaraujosouza/brcommerce/models/product/fields.yaml
+        list: $/brenodouglasaraujosouza/brcommerce/models/product/columns.yaml
+        recordsPerPage: 10

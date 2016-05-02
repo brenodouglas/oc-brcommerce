@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Custom Category
+
+# Model Form Field configuration
+form: $/brenodouglasaraujosouza/drinks/models/customcategory/fields.yaml
+
+# Model Class name
+modelClass: Brenodouglasaraujosouza\Drinks\Models\CustomCategory
+
+# Default redirect location
+defaultRedirect: brenodouglasaraujosouza/drinks/customcategory
+
+# Create page
+create:
+    title: Create Custom Category
+    redirect: brenodouglasaraujosouza/drinks/customcategory/update/:id
+    redirectClose: brenodouglasaraujosouza/drinks/customcategory
+
+# Update page
+update:
+    title: Edit Custom Category
+    redirect: brenodouglasaraujosouza/drinks/customcategory
+    redirectClose: brenodouglasaraujosouza/drinks/customcategory
+
+# Preview page
+preview:
+    title: Preview Custom Category

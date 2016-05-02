@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    email: 
+        label: Email
+        span: left
+    telefone: 
+        label: Telefone
+        span: right
+    endereco:
+        label: Endereço
+        span: left
+    maps:
+        label: Maps
+        type: textarea
+        span: right
+    sobre:
+        label: A empresa
+        type: richeditor
+        size: huge

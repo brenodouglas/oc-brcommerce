@@ -10,4 +10,4 @@ columns:
     categoryName:
         label: Categoria
         type: text
-        searchable: true
+        searchable: false

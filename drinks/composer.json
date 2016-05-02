@@ -1,0 +1,12 @@
+{
+    "name": "brenodouglas/drinks",
+    "description": "Drinks e drinks plugin integration with brcommerce",
+    "authors": [
+        {
+            "name": "BrenoDouglas",
+            "email": "bdouglasans@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

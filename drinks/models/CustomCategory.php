@@ -29,7 +29,8 @@ class CustomCategory extends Model
      * @var array Relations
      */
     public $hasOne = [];
-    public $hasMany = [];
+    public $hasMany = [
+    ];
 
     public $belongsTo = [
         'parent' => [self::class]

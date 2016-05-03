@@ -83,12 +83,12 @@ class Plugin extends PluginBase
                 'permissions' => ['brenodouglasaraujosouza.drinks.*'],
                 'order'       => 500,
                 'sideMenu' => [
-                    //'customproducts' => [
-                   //     'label'       => 'Produtos Destaque',
-                      //  'icon'        => 'icon-plus',
-                        //'url'         => Backend::url('brenodouglasaraujosouza/drinks/customproducts'),
-                        //'permissions' => ['brenodouglasaraujosouza.drinks.custom_product']
-                    //],
+                   'customproducts' => [
+                        'label'       => 'Produtos Destaque',
+                        'icon'        => 'icon-plus',
+                        'url'         => Backend::url('brenodouglasaraujosouza/drinks/customproducts'),
+                        'permissions' => ['brenodouglasaraujosouza.drinks.custom_product']
+                    ],
                     'customcategory' => [
                         'label'       => 'Categorias Drinks&Drinks',
                         'icon'        => 'icon-plus',

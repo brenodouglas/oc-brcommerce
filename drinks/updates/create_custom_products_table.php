@@ -11,6 +11,7 @@ class CreateCustomProductsTable extends Migration
         Schema::create('brenodouglasaraujosouza_drinks_custom_products', function($table)
         {
             $table->increments('id');
+            $table->integer('page');
             $table->timestamps();
         });
     }

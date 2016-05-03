@@ -9,7 +9,7 @@
     - create_custom_category_has_products_table.php
 1.0.4:
     - Create relation custom_produts has products
-    - create_custom_products_has_products_table.php
+    - create_custom_product_has_products_table.php
 1.0.5:
     - Create sobre table
     - create_sobres_table.php

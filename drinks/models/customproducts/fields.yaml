@@ -3,4 +3,12 @@
 # ===================================
 
 fields:
-    
+    page:
+        label: Página
+        type: dropdown
+        options:
+            1: Home
+    products:
+        label: Produtos
+        commentAbove: Produtos de destaque
+        type: partial

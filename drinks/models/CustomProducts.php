@@ -11,17 +11,12 @@ class CustomProducts extends Model
 
     use \October\Rain\Database\Traits\Validation;
 
-    public $implement = ['System.Behaviors.SettingsModel'];
-
-    // A unique code
-    public $settingsCode = 'acme_demo_settings';
-
-    // Reference to field configuration
-    public $settingsFields = 'fields.yaml';
-    
     public $rules = [
     ];
 
+    public $pages = [
+        1 => 'Home'
+    ];
     /**
      * @var string The database table used by the model.
      */
@@ -45,9 +40,9 @@ class CustomProducts extends Model
     ];
     public $belongsTo = [];
     public $belongsToMany = [
-        'products' => [
+         'products' => [
             Product::class,
-            'table' => 'brenodouglasaraujosouza_drinks_custom_products_has_products'
+            'table' => 'brenodouglasaraujosouza_drinks_custom_product_has_products'
         ],
     ];
 
@@ -57,4 +52,8 @@ class CustomProducts extends Model
     public $attachOne = [];
     public $attachMany = [];
 
+    public function getPageAttribute()
+    {
+        return $this->pages[$this->attributes['page']];
+    }
 }

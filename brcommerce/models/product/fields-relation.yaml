@@ -1,0 +1,140 @@
+fields:
+    name:
+        label: Nome
+        span: left
+        placeholder: nome do produto
+    slug:
+        label: Slug
+        span: right
+        placeholder: url do produto
+        preset:
+            field: name
+            type: slug
+            
+secondaryTabs:
+    stretch: true
+    fields:
+        sku:
+            label: Referência
+            tab: Informações
+            span: left
+        categories:
+            label: Categorias
+            type: relation
+            tab: Informações
+            span: right
+            emptyOption: Nenhum
+        publish_date:
+            label: Data de publicação
+            span: left
+            type: datepicker
+            mode: date
+            tab: Informações
+            comment: Só publicar a partir da data selecionada
+        is_publish:
+            label: Publicar
+            span: right
+            type: switch
+            tab: Informações
+            comment: Caso já deseja publicar esse produto
+        author:
+            label: Autor
+            tab: Review
+        review:
+            label: Review
+            type: richeditor
+            size: huge
+            tab: Review
+        manufacture:
+            label: Fabricante
+            type: relation
+            tab: Informações
+            span: left
+        tags:
+            label: Tags
+            type: owl-tagbox
+            span: right
+            tab: Informações
+        description:
+            label: Descrição
+            type: richeditor
+            size: huge
+            tab: Informações
+        price:
+            label: Preço
+            type: owl-money
+            span: left
+            required: true
+            tab: Venda
+        old_price:
+            label: Preço anterior
+            type: owl-money
+            span: right
+            tab: Venda
+        quantity:
+            label: Quantidade
+            type: number
+            span: left
+            tab: Venda
+            required: true
+        inventory_ref:
+            label: Referência de estoque
+            span: right
+            tab: Venda
+            required: true
+        meta_title:
+            label: Titulo
+            tab: SEO
+            type: text
+            span: left
+        meta_keywords:
+            label: Palavras Chaves
+            tab: SEO
+            type: text
+            span: right
+            comment: separe as palavras por virgulas
+        meta_description:
+            label: Descrição
+            tab: SEO
+            type: richeditor
+            size: huge
+        images:
+            label: Imagens
+            tab: Fotos
+            type: fileupload
+            mode: image
+        options:
+            type: BrenoDouglasAraujoSouza\BrCommerce\Widget\RepeaterCommerce
+            dependsOn: categories
+            tab: Opções
+            dependsOn: categories
+            form:
+                fields:
+                    name:
+                        label: Nome
+                        span: left
+                    value:
+                        label: Valor
+                        span: right
+                    type: 
+                        label: Tipo de filtro
+                        type: dropdown
+                        span: left
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
+                        options:
+                            0: Lista
+                            1: Campo
+                    label:  
+                        label: Label 
+                        span: right
+                        trigger:
+                            action: show
+                            field: filter
+                            condition: checked
+                    filter:
+                        label: Filtro
+                        type: switch
+                        span: left

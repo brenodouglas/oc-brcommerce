@@ -45,6 +45,11 @@ secondaryTabs:
             options:    
                 0: Subcategorias
                 1: Listagem de produtos
+        products:
+            label: Produtos
+            commentAbove: Produtos relacionados a essa categoria
+            type: partial
+            tab: Informações
         description:
             label: Descrição de categoria
             type: richeditor

@@ -9,7 +9,7 @@ list: $/brenodouglasaraujosouza/drinks/models/customproducts/columns.yaml
 modelClass: Brenodouglasaraujosouza\Drinks\Models\CustomProducts
 
 # List Title
-title: Manage Custom Products
+title: Gerenciar Produto de Destaque
 
 # Link URL for each record
 recordUrl: brenodouglasaraujosouza/drinks/customproducts/update/:id

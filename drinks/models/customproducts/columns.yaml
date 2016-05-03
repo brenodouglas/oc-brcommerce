@@ -5,6 +5,6 @@ columns:
     id:
         label: ID
         searchable: true
-    page:
+    pageName:
         label: Página
         searchable: true

@@ -16,16 +16,16 @@ defaultRedirect: brenodouglasaraujosouza/drinks/customcategory
 
 # Create page
 create:
-    title: Create Custom Category
+    title: Criar Categoria Customizada
     redirect: brenodouglasaraujosouza/drinks/customcategory/update/:id
     redirectClose: brenodouglasaraujosouza/drinks/customcategory
 
 # Update page
 update:
-    title: Edit Custom Category
+    title: Editar Categoria Customizada
     redirect: brenodouglasaraujosouza/drinks/customcategory
     redirectClose: brenodouglasaraujosouza/drinks/customcategory
 
 # Preview page
 preview:
-    title: Preview Custom Category
+    title: Visualizar Categoria Customizada

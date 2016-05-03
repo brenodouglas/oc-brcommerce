@@ -52,7 +52,7 @@ class CustomProducts extends Model
     public $attachOne = [];
     public $attachMany = [];
 
-    public function getPageAttribute()
+    public function getPageNameAttribute()
     {
         return $this->pages[$this->attributes['page']];
     }

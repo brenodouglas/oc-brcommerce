@@ -16,16 +16,16 @@ defaultRedirect: brenodouglasaraujosouza/drinks/customproducts
 
 # Create page
 create:
-    title: Create Custom Product
+    title: Criar Produto de Destaque
     redirect: brenodouglasaraujosouza/drinks/customproducts/update/:id
     redirectClose: brenodouglasaraujosouza/drinks/customproducts
 
 # Update page
 update:
-    title: Edit Custom Product
+    title: Editar Produto de Destaque
     redirect: brenodouglasaraujosouza/drinks/customproducts
     redirectClose: brenodouglasaraujosouza/drinks/customproducts
 
 # Preview page
 preview:
-    title: Preview Custom Product
+    title: Visualizar Produto de Destaque

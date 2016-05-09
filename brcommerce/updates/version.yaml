@@ -40,3 +40,6 @@
 1.0.14:
     - 'Create view for options filter category'
     - create_view_options_filter.php
+1.0.15:
+    - 'Create view to options for product'
+    - create_view_options_product.php

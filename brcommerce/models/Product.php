@@ -1,6 +1,7 @@
 <?php namespace BrenoDouglasAraujoSouza\BrCommerce\Models;
 
 use Model;
+use October\Rain\Database\QueryBuilder;
 use System\Models\File;
 
 /**
@@ -57,6 +58,12 @@ class Product extends Model
 
         return implode(", ", $categories);
     }
+
+    public function scopeFilter(QueryBuilder $query, array $filters)
+    {
+        $query->join('brcommerce_options_product', '' );
+    }
+
 
     public function filterFields($fields, $context = null)
     {

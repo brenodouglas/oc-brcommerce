@@ -2,4 +2,12 @@ columns:
     id:
         label: Id
         type: number
+    first_name:
+        label: Primeiro nome
+        searchable: true
+    last_name:
+        label: Sobrenome
+        searchable: true
+    cpf_cnpj:
+        label: Cpf/Cnpj
         searchable: true

@@ -1,1 +1,14 @@
-fields: {  }
+fields:
+  first_name:
+    label: Nome
+    span: left
+  last_name:
+    label: Sobrenome
+    span: right
+  type:
+    label: Tipo
+    type: radio
+    span: left
+    options:
+        0: Física
+        1: Juridica

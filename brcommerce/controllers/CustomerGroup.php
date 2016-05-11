@@ -20,6 +20,6 @@ class CustomerGroup extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Brenodouglasaraujosouza.Brcommerce', 'brcommerce', 'customergroup');
+        BackendMenu::setContext('BrenoDouglasAraujoSouza.BrCommerce', 'customer', 'group');
     }
 }

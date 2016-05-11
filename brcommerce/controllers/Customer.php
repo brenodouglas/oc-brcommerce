@@ -20,6 +20,6 @@ class Customer extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Brenodouglasaraujosouza.Brcommerce', 'brcommerce', 'customer');
+        BackendMenu::setContext('BrenoDouglasAraujoSouza.BrCommerce', 'customer', 'customer');
     }
 }

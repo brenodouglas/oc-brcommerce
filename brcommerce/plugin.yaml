@@ -74,7 +74,7 @@ navigation:
                 icon: icon-user
             group:
                 label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.groups'
-                url: brenodouglasaraujosouza/brcommerce/group
+                url: brenodouglasaraujosouza/brcommerce/customerGroup
                 icon: icon-user
 #    main-menu-item4:
 #        label: 'brenodouglasaraujosouza.brcommerce::lang.menu.item.label.marketing'

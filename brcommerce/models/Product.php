@@ -62,7 +62,23 @@ class Product extends Model
 
     public function scopeFilter(QueryBuilder $query, Filter $filter)
     {
-        $query->join('brcommerce_options_product', '' );
+        $collectionFilter = $filter->getFilters();
+
+        return $query->whereIn('id', function($query) use($collectionFilter) {
+            $query->select('product_id')
+                  ->from('brcommerce_options_product');
+
+            $count = 0;
+
+            foreach($collectionFilter as $item) {
+                $condition = function($query) use($item) {
+                    $query->where("name", '=', strtolower($item['name']));
+                    $query->where("value", '=', strtolower($item['value']));
+                };
+
+                $count++ == 0 ? $query->where($condition) : $query->orWhere($condition);
+            }
+        });
     }
 
 

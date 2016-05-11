@@ -3,6 +3,7 @@
 use Model;
 use October\Rain\Database\QueryBuilder;
 use System\Models\File;
+use BrenoDouglasAraujoSouza\BrCommerce\Utils\Filter;
 
 /**
  * Model
@@ -59,7 +60,7 @@ class Product extends Model
         return implode(", ", $categories);
     }
 
-    public function scopeFilter(QueryBuilder $query, array $filters)
+    public function scopeFilter(QueryBuilder $query, Filter $filter)
     {
         $query->join('brcommerce_options_product', '' );
     }

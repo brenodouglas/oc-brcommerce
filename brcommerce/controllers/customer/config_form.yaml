@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Customer
+
+# Model Form Field configuration
+form: $/brenodouglasaraujosouza/brcommerce/models/customer/fields.yaml
+
+# Model Class name
+modelClass: Brenodouglasaraujosouza\Brcommerce\Models\Customer
+
+# Default redirect location
+defaultRedirect: brenodouglasaraujosouza/brcommerce/customer
+
+# Create page
+create:
+    title: Create Customer
+    redirect: brenodouglasaraujosouza/brcommerce/customer/update/:id
+    redirectClose: brenodouglasaraujosouza/brcommerce/customer
+
+# Update page
+update:
+    title: Edit Customer
+    redirect: brenodouglasaraujosouza/brcommerce/customer
+    redirectClose: brenodouglasaraujosouza/brcommerce/customer
+
+# Preview page
+preview:
+    title: Preview Customer

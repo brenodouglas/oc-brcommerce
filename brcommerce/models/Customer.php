@@ -25,4 +25,8 @@ class Customer extends Model
      * @var string The database table used by the model.
      */
     public $table = 'brenodouglasaraujosouza_brcommerce_customer';
+
+    public $belongsTo = [
+      'group' => [CustomerGroup::class]
+    ];
 }

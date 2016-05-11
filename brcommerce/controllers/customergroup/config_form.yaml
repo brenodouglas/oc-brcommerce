@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Customer Group
+
+# Model Form Field configuration
+form: $/brenodouglasaraujosouza/brcommerce/models/customergroup/fields.yaml
+
+# Model Class name
+modelClass: Brenodouglasaraujosouza\Brcommerce\Models\CustomerGroup
+
+# Default redirect location
+defaultRedirect: brenodouglasaraujosouza/brcommerce/customergroup
+
+# Create page
+create:
+    title: Create Customer Group
+    redirect: brenodouglasaraujosouza/brcommerce/customergroup/update/:id
+    redirectClose: brenodouglasaraujosouza/brcommerce/customergroup
+
+# Update page
+update:
+    title: Edit Customer Group
+    redirect: brenodouglasaraujosouza/brcommerce/customergroup
+    redirectClose: brenodouglasaraujosouza/brcommerce/customergroup
+
+# Preview page
+preview:
+    title: Preview Customer Group

@@ -43,3 +43,6 @@
 1.0.15:
     - 'Create view to options for product'
     - create_view_options_product.php
+1.0.16:
+    - 'Create customer address'
+    - create_customer_addresses_table.php

@@ -13,6 +13,7 @@ class CreateCustomerMigration extends Migration
             $table->increments("id");
             $table->string("first_name");
             $table->string('last_name');
+            $table->string('cpf_cnpj');
             $table->string('email');
             $table->string('telephone');
             $table->string('fax');
@@ -21,10 +22,11 @@ class CreateCustomerMigration extends Migration
             $table->boolean('newsletter');
             $table->integer('status');
             $table->integer('email_active');
+            $table->integer('type');
 
-            $table->integer('group_id')->unsigned();
+            $table->integer('group_id')->unsigned()->nullable();
             $table->foreign('group_id', 'group_costumer_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_customer_group');
-            $table->index('group_id', 'custome_customer_group_index');
+            $table->index('group_id', 'customer_customer_group_index');
 
             $table->timestamps();
         });

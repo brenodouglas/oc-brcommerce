@@ -14,6 +14,7 @@ class CreateCustomerGroupMigration extends Migration
             $table->string("name");
             $table->text('description');
             $table->boolean("direct_approve");
+            $table->integer('type');
 
             $table->timestamps();
         });

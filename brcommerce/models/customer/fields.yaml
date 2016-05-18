@@ -53,6 +53,8 @@ fields:
       span: left
       type: datepicker
       mode: date
+      minDate: 1900-01-01
+      maxDate: 1998-12-01
 
   genre:
       label: Sexo

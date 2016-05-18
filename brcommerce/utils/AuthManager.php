@@ -40,7 +40,7 @@ class AuthManager
     {
         $model = $this->createUserModel();
         if (!array_key_exists('email', $credentials)) {
-            throw new AuthException('Login attribute "email" was not provided.');
+            throw new AuthException('O campo "email" é obrigatório.');
         }
 
         $query = $model->newQuery();
@@ -61,7 +61,7 @@ class AuthManager
         }
 
         if (!$user = $query->first()) {
-            throw new AuthException('A user was not found with the given credentials.');
+            throw new AuthException('Usuário não encontrado com essas credenciais');
         }
 
         /*
@@ -72,13 +72,11 @@ class AuthManager
             if (!$user->checkHashValue($credential, $value)) {
                 // Incorrect password
                 if ($credential == 'password') {
-                    throw new AuthException(sprintf(
-                        'A user was found to match all plain text credentials however hashed credential "%s" did not match.', $credential
-                    ));
+                    throw new AuthException('Usuário/Senha incorretos');
                 }
 
                 // User not found
-                throw new AuthException('A user was not found with the given credentials.');
+                throw new AuthException('Não foi encontrado nenhum usuário com essas credenciais.');
             }
         }
 
@@ -100,11 +98,11 @@ class AuthManager
         $loginCredentialKey = (isset($credentials[$loginName])) ? $loginName : 'login';
 
         if (empty($credentials[$loginCredentialKey])) {
-            throw new AuthException(sprintf('The "%s" attribute is required.', $loginCredentialKey));
+            throw new AuthException(sprintf('O "%s" atributo é obrigátorio.', $loginCredentialKey));
         }
 
         if (empty($credentials['password'])) {
-            throw new AuthException('The password attribute is required.');
+            throw new AuthException('A senha é um campo obrigatório.');
         }
 
         /*

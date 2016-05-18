@@ -16,13 +16,22 @@ class CreateCustomerMigration extends Migration
             $table->string('cpf_cnpj');
             $table->string('email');
             $table->string('telephone');
-            $table->string('fax');
+            $table->string('cel');
             $table->string('password');
-            $table->string('salt');
             $table->boolean('newsletter');
             $table->integer('status');
             $table->integer('email_active');
             $table->integer('type');
+            $table->integer('genre');
+            $table->date('date_nasc');
+
+            /** User Attributs */
+            $table->string('activation_code')->nullable()->index('customer_code_active_index');
+            $table->string('persist_code')->nullable();
+            $table->string('reset_password_code')->nullable()->index('customer_reset_code_index');
+            $table->boolean('is_activated')->default(0);
+            $table->timestamp('activated_at')->nullable();
+            $table->timestamp('last_login')->nullable();
 
             $table->integer('group_id')->unsigned()->nullable();
             $table->foreign('group_id', 'group_costumer_f')->references('id')->on('brenodouglasaraujosouza_brcommerce_customer_group');

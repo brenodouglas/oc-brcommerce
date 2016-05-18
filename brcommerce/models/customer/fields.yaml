@@ -1,14 +1,77 @@
 fields:
   first_name:
-    label: Nome
-    span: left
+      label: Nome
+      span: left
+
   last_name:
-    label: Sobrenome
-    span: right
+      label: Sobrenome
+      span: right
+
   type:
-    label: Tipo
-    type: radio
-    span: left
-    options:
-        0: Física
-        1: Juridica
+      label: Tipo
+      type: dropdown
+      span: left
+      options:
+          0: Física
+          1: Juridica
+  cpf_cnpj:
+      label: CPF/CNPJ
+      span: right
+
+  email:
+      label: Email
+
+  cel:
+      label: Celular
+      span: left
+
+  telephone:
+      label: Telefone
+      span: right
+
+  password:
+      type: password
+      span: left
+      label: Senha
+
+  password_confirmation:
+      type: password
+      span: right
+      label: Confirmação de senha
+
+  status:
+      label: Status
+      type: dropdown
+      span: right
+      options:
+          0: Ativo
+          1: Inativo
+          2: Bloqueado
+
+  date_nasc:
+      label: Data de nascimento
+      span: left
+      type: datepicker
+      mode: date
+
+  genre:
+      label: Sexo
+      type: dropdown
+      span: left
+      options:
+          0: Masculino
+          1: Feminino
+  group:
+      label: Grupo
+      type: relation
+      span: right
+
+  email_active:
+      label: Deseja já ativar cadastro
+      type: switch
+      span: left
+
+  newsletter:
+      label: Deseja receber emails promocionais
+      type: switch
+      span: right

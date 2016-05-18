@@ -11,6 +11,20 @@ class CreateOrdersTable extends Migration
         Schema::create('brenodouglasaraujosouza_brcommerce_orders', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+
+            $table->integer('customer_id');
+            $table->integer('address_id');
+
+            $table->timestamps();
+        });
+
+        Schema::create('brenodouglasaraujosouza_brcommerce_orders', function(Blueprint $table) {
+            $table->engine = 'InnoDB';
+            $table->increments('id');
+
+            $table->integer('customer_id');
+            $table->integer('address_id');
+
             $table->timestamps();
         });
     }

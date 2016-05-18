@@ -9,6 +9,8 @@ use System\Classes\PluginBase;
 class Plugin extends PluginBase
 {
 
+    public $require = ['BrenoDouglasAraujoSouza.BrCommerce'];
+
     /**
      * Returns information about this plugin.
      *

@@ -7,6 +7,9 @@ class Address
 {
     const KEY = 'a0s8dkw9';
 
+    public $myLat = -16.6775439;
+    public $myLong = -49.2623278;
+
     public $logradouro;
     public $cidade;
     public $estado;
@@ -15,10 +18,16 @@ class Address
     public $lat;
     public $long;
 
+    public function __construct()
+    {
+        $this->getObject();
+    }
+
     public function flush()
     {
         $objectClone = clone($this);
         Session::put(self::KEY, serialize($objectClone));
+
     }
 
     public function getObject() : Address
@@ -40,9 +49,24 @@ class Address
         return $this;
     }
 
+    public function getDistance($type = 'km')
+    {
+        if(! Session::has(self::KEY))
+            return null;
+
+        $this->calculate();
+
+        $geotools = new \League\Geotools\Geotools();
+        $coordA   = new \League\Geotools\Coordinate\Coordinate([$this->myLat, $this->myLong]);
+        $coordB   = new \League\Geotools\Coordinate\Coordinate([$this->lat, $this->long]);
+
+        $distance = $geotools->distance()->setFrom($coordA)->setTo($coordB);
+
+        return $distance->in($type)->vincenty();
+    }
+
     public function calculate()
     {
-
         $geocoder = new \Geocoder\ProviderAggregator(); // or \Geocoder\TimedGeocoder
         $adapter  = new \Ivory\HttpAdapter\CurlHttpAdapter();
 

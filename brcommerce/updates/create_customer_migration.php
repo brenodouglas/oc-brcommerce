@@ -8,7 +8,7 @@ class CreateCustomerMigration extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_customer', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_customer', function($table)
         {
             $table->increments("id");
             $table->string("first_name");

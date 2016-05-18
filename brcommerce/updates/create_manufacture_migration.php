@@ -8,7 +8,7 @@ class CreateManufactureMigration extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_manufacture', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_manufacture', function($table)
         {
             $table->increments("id");
             $table->string("name");

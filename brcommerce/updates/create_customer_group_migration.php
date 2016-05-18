@@ -8,7 +8,7 @@ class CreateCustomerGroupMigration extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_customer_group', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_customer_group', function($table)
         {
             $table->increments("id");
             $table->string("name");

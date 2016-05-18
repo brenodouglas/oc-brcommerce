@@ -8,7 +8,7 @@ class CreatOptionMigration extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_option', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_option', function($table)
         {
             $table->increments("id");
             $table->string("name");

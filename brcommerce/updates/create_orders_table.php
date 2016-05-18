@@ -8,7 +8,7 @@ class CreateOrdersTable extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_orders', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_brcommerce_orders', function($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
 
@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('brenodouglasaraujosouza_brcommerce_orders', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_brcommerce_orders', function($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
 

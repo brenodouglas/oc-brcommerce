@@ -8,7 +8,7 @@ class CreateInformationMigration extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_information', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_information', function($table)
         {
             $table->increments("id");
             $table->string("name");

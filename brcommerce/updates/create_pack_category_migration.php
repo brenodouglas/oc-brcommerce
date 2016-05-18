@@ -9,7 +9,7 @@ class CreatePackCategoryMigration extends Migration
 
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_pack_has_category', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_pack_has_category', function($table)
         {
             $table->increments("id");
             $table->integer('pack_id')->nullable()->unsigned();

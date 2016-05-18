@@ -8,7 +8,7 @@ class CreateCustomerAddressesTable extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_customer_addresses', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_brcommerce_customer_addresses', function($table) {
             $table->increments('id');
             $table->string('address');
             $table->string('number');

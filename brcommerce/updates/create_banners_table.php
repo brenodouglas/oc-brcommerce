@@ -9,7 +9,7 @@ class CreateBannersTable extends Migration
 
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_banners', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_banners', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');

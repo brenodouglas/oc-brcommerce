@@ -8,7 +8,7 @@ class CreateInvoicesTable extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_invoices', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_brcommerce_invoices', function($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->timestamps();

@@ -9,7 +9,7 @@ class CreateProductMigration extends Migration
 
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_product', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_product', function($table)
         {
             $table->increments("id");
             $table->string("name");

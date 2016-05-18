@@ -8,7 +8,7 @@ class CreateReturnsTable extends Migration
 {
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_returns', function(Blueprint $table) {
+        Schema::create('brenodouglasaraujosouza_brcommerce_returns', function($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->timestamps();

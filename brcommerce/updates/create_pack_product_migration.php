@@ -9,7 +9,7 @@ class CreatePackProductMigration extends Migration
 
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_pack', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_pack', function($table)
         {
             $table->increments("id");
             $table->string("name");

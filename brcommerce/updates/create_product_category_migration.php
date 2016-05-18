@@ -9,7 +9,7 @@ class CreateProductCategoryMigration extends Migration
 
     public function up()
     {
-        Schema::create('brenodouglasaraujosouza_brcommerce_product_has_category', function(Blueprint $table)
+        Schema::create('brenodouglasaraujosouza_brcommerce_product_has_category', function($table)
         {
             $table->increments("id");
             $table->integer('product_id')->nullable()->unsigned();

@@ -8,11 +8,11 @@ class CreateViewOptionsProduct extends Migration
 {
     public function up()
     {
-        DB::statement("CREATE VIEW brcommerce_options_product AS
+        DB::statement("CREATE VIEW  AS
             WITH options AS(
                 SELECT
                     p.id,
-                    json_array_elements(options) as options,
+                    json_array_elements((SELECT json_agg(value) FROM  json_each(p.options))) as options,
                     pc.category_id as category
                 FROM brenodouglasaraujosouza_brcommerce_product p
                 INNER JOIN brenodouglasaraujosouza_brcommerce_product_has_category pc ON pc.product_id = p.id

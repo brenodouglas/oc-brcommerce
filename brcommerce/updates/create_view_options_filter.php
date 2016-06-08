@@ -11,8 +11,8 @@ class CreateViewOptionsFilter extends Migration
         DB::statement("CREATE VIEW brcommerce_options_filter AS
             WITH options AS(
                 SELECT
-                    p.id,
-                    json_array_elements(options) as options,
+                    p.id as product_id,
+                     json_array_elements((SELECT json_agg(value) FROM  json_each(p.options))) as options,
                     pc.category_id as category
                 FROM brenodouglasaraujosouza_brcommerce_product p
                 INNER JOIN brenodouglasaraujosouza_brcommerce_product_has_category pc ON pc.product_id = p.id
@@ -22,7 +22,7 @@ class CreateViewOptionsFilter extends Migration
                 lower(o.options->>'value') as value,
                 o.options->>'label' as label,
                 o.options->>'type' as type,
-                count(o.id) as total,
+                count(o.product_id) as total,
                 o.category as category_id
             FROM options as o
             WHERE o.options->>'filter' = '1'

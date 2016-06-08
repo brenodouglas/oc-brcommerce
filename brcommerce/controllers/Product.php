@@ -32,7 +32,7 @@ class Product extends Controller
     public function update($recordId = null)
     {
         $this->bodyClass = 'compact-container';
-        $this->addJs('/plugins/brenodouglas/wine/assets/js/post-form.js');
+        $this->addJs('/plugins/brenodouglasaraujosouza/brcommerce/assets/js/post-form.js');
 
         return $this->asExtension('FormController')->update($recordId);
     }

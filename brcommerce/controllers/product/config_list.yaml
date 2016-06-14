@@ -1,6 +1,6 @@
 list: $/brenodouglasaraujosouza/brcommerce/models/product/columns.yaml
 modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Product
-title: Product
+title: Produto
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true

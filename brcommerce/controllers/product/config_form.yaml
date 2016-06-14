@@ -1,4 +1,4 @@
-name: Product
+name: Produto
 form: $/brenodouglasaraujosouza/brcommerce/models/product/fields.yaml
 modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Product
 defaultRedirect: brenodouglasaraujosouza/brcommerce/product

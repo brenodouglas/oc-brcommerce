@@ -1,4 +1,4 @@
-name: Category
+name: Categoria
 form: $/brenodouglasaraujosouza/brcommerce/models/category/fields.yaml
 modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Category
 defaultRedirect: brenodouglasaraujosouza/brcommerce/category

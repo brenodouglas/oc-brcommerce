@@ -1,6 +1,6 @@
 list: $/brenodouglasaraujosouza/brcommerce/models/category/columns.yaml
 modelClass: BrenoDouglasAraujoSouza\BrCommerce\Models\Category
-title: Category
+title: Categoria
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true

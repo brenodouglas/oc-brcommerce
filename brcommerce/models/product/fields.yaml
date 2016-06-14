@@ -115,10 +115,10 @@ secondaryTabs:
             form:
                 fields:
                     name:
-                        label: Nome
+                        label: Nome do campo
                         span: left
                     value:
-                        label: Valor
+                        label: Valor do campo
                         span: right
                     type: 
                         label: Tipo de filtro
@@ -132,7 +132,7 @@ secondaryTabs:
                             0: Lista
                             1: Campo
                     label:  
-                        label: Label 
+                        label: Titulo do filtro
                         span: right
                         trigger:
                             action: show
